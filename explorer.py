@@ -1,9 +1,8 @@
-import pandas as pd
+import pandas as p d
 import psycopg2
 import warnings
 import getpass
 
-warnings.filterwarnings("ignore", message="pandas only supports SQLAlchemy")
 pd.set_option("display.width", 200)
 pd.set_option("display.max_columns", 30)
 
@@ -11,7 +10,7 @@ mot_de_passe = getpass.getpass("Mot de passe PostgreSQL : ")
 connexion = psycopg2.connect(host="localhost", port=5432, dbname="AssurRisk1",
  user="postgres", password=mot_de_passe)
 df = pd.read_sql("SELECT * FROM fact_sinistre_meteo", connexion)
-print("Données chargées :", df.shape)
+print("Données chargées :, df.shape)
 df["montant_estime"] = df["montant_estime"].astype(float)
 df["franchise"] = df["franchise"].astype(float)
 df["date_survenance"] = pd.to_datetime(df["date_survenance"])

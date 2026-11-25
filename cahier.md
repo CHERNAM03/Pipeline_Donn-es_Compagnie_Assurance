@@ -205,3 +205,8 @@ La franchise moyenne est d’environ 228,70 € et sa médiane est de 200 €; e
 - **Ce que je sais faire :** versionner mes dossiers avec Git, créer des commits et consulter l’historique du projet.
 - **Ce qui reste flou :** utiliser `git restore` et comprendre ce qui est restauré par Git par rapport à ce que le script régénère à l’exécution.
 - **Le moment où j’ai compris :** l’ajout du statut `"ok"` au journal m’a montré comment une fonction commune évite de répéter la même modification à plusieurs endroits.
+
+
+# Note sur l'importance de git restore
+
+« git restore a remis explorer.py dans l’état du dernier commit, “Version cassee de   -explorer.py trois”, qui contenait déjà le code cassé ; le fichier est donc resté cassé. »

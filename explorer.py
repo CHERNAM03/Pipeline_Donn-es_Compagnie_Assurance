@@ -1,8 +1,9 @@
-import pandas as p d
+import pandas as pd
 import psycopg2
 import warnings
 import getpass
 
+warnings.filterwarnings("ignore", message="pandas only supports SQLAlchemy")
 pd.set_option("display.width", 200)
 pd.set_option("display.max_columns", 30)
 
